@@ -31,15 +31,30 @@ abbr {
     position: relative;
 }
 
+.design-archives li,
+.zen-resources li {
+    border: 1px solid;
+    padding: 5px;
+    margin: 2px;
+    background: linear-gradient(rgb(98, 165, 224), rgb(98, 224, 158));
+    list-style-type: none;
+}
+.design-archives a,
+.zen-resources a {
+    text-decoration: none;
+    color: rgb(76, 6, 13);
+}
+
 footer {
+    display: flex;
     position: absolute;
     background-image: linear-gradient(rgb(98, 165, 224), rgb(98, 224, 158));
     width: 100%;
-    height: 20px;
+    height: 40px;
     margin: auto;
     bottom: -60px;
-    padding: 10px;
-    text-align: center;
+    justify-content: space-around;
+    align-items: center;
 }
 
 .summary, .preamble {
@@ -47,7 +62,10 @@ footer {
 }
 
 h3 {
+    font-family: 'IBM Plex Mono', monospace;
     text-align: center;
+    color: rgb(76, 6, 13);
+    text-decoration: underline;
 }
 
 .explanation, 
@@ -55,6 +73,18 @@ h3 {
 .benefits,
 .requirements {
     text-align: justify;
+}
+
+footer a {
+    padding: 2px;
+    border: 1px solid;
+    text-decoration: none;
+    color: rgb(76, 6, 13);
+    font-weight: bold;
+}
+
+a {
+    color: rgb(98, 165, 224);
 }
 
 
@@ -124,31 +154,59 @@ h3 {
     }
     
     h3 {
+        font-family: 'IBM Plex Mono', monospace;
         text-align: center;
+        color: rgb(76, 6, 13);
+        text-decoration: underline;
     }
     
     .design-achives {
         display: flex;
     }
     
-    .design-archives li,
-    .zen-resources li{
-        display: inline;
+    .design-archives ul,
+    .zen-resources ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        flex-wrap: wrap;
     }
     
-    .design-archives ul,
-    .zen-resources ul {
-        justify-content: space-between;
+    .design-archives a,
+    .zen-resources a {
+        text-decoration: none;
+        color: rgb(76, 6, 13);
     }
-
+    
+    .design-archives li,
+    .zen-resources li {
+        border: 1px solid;
+        padding: 5px;
+        margin: 2px;
+        background: linear-gradient(rgb(98, 165, 224), rgb(98, 224, 158));
+        list-style-type: none;
+    }
+    
     footer {
-        position: absolute;
+        display: flex;
         background-image: linear-gradient(rgb(98, 165, 224), rgb(98, 224, 158));
         width: 100%;
-        height: 20px;
+        height: 40px;
         margin: auto;
         bottom: -60px;
-        padding: 10px;
-        text-align: center;
+        justify-content: space-around;
+        align-items: center;
+    }
+    
+    footer a {
+        padding: 2px;
+        border: 1px solid;
+        text-decoration: none;
+        color: rgb(76, 6, 13);
+        font-weight: bold;
+    }
+    
+    a {
+        color: rgb(98, 165, 224);
     }
 }
